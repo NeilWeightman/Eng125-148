@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5731f53-8ab7-4bd8-a22c-a188e2ef9537" name="Changes" comment="" />
+    <list default="true" id="db3480c6-2f49-499f-aa18-c8d92e9eaf2f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/logging/DoSomething.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/logging/LoggingMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterfaceExample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../InterfaceExample/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +24,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -24,7 +33,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2BWCrKeAAev07k5VX3ioH0zzDWG" />
+  <component name="ProjectId" id="2BZ8iWcIrsU5QLdipY5APWfP0tj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -35,6 +44,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -46,12 +56,12 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="InterfaceMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sparta.interfaces.InterfaceMain" />
-      <module name="InterfaceExample" />
+    <configuration name="LoggingMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sparta.logging.LoggingMain" />
+      <module name="LoggingExample" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sparta.interfaces.*" />
+          <option name="PATTERN" value="com.sparta.logging.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -61,19 +71,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.InterfaceMain" />
+        <item itemvalue="Application.LoggingMain" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c5731f53-8ab7-4bd8-a22c-a188e2ef9537" name="Changes" comment="" />
-      <created>1657012653575</created>
+      <changelist id="db3480c6-2f49-499f-aa18-c8d92e9eaf2f" name="Changes" comment="" />
+      <created>1657102376427</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1657012653575</updated>
-      <workItem from="1657012655954" duration="12678000" />
+      <updated>1657102376427</updated>
+      <workItem from="1657102378836" duration="2438000" />
     </task>
     <servers />
   </component>
