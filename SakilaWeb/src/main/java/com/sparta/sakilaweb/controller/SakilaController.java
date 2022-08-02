@@ -6,8 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
+import java.time.Instant;
 import java.util.Date;
 import java.util.Optional;
 
@@ -49,4 +52,26 @@ public class SakilaController {
 //        } else
 //            return "noActorFound";
 //    }
+
+    @GetMapping("/actor/edit/{id}")
+    public String displayActorEditForm(@PathVariable int id, Model model){
+        Actor actor = repo.findById(id).get();
+        model.addAttribute("actorToEdit", actor);
+        return "actorEditForm";
+    }
+
+    @PostMapping("/updateActor")
+    public String updateActor(@ModelAttribute("actorToEdit") Actor actor){
+        actor.setLastUpdate(Instant.now());
+        System.out.println(actor);
+        repo.save(actor);
+//        repo.saveAndFlush(actor);
+        return "editSuccess";
+    }
+
+    @GetMapping("/actor/delete/{id}")
+    public String deleteActor(@PathVariable int id){
+        repo.delete(repo.findById(id).get());
+        return "actorDeleted";
+    }
 }

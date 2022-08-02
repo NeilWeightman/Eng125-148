@@ -52,4 +52,13 @@ public class Actor {
         this.lastUpdate = lastUpdate;
     }
 
+    @Override
+    public String toString() {
+        return "Actor{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", lastUpdate=" + lastUpdate +
+                '}';
+    }
 }
