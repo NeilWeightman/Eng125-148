@@ -90,4 +90,14 @@ public class SakilaController {
         repo.delete(repo.findById(id).get());
         return "actorDeleted";
     }
+
+    @GetMapping("/login")
+    public String loginForm(){
+        return "login";
+    }
+
+    @GetMapping("accessDenied")
+    public String accessDenied(){
+        return "accessDenied";
+    }
 }
