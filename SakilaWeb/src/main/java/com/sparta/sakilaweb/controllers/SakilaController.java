@@ -1,23 +1,39 @@
-package com.sparta.sakilaweb.controller;
+package com.sparta.sakilaweb.controllers;
 
 import com.sparta.sakilaweb.entities.Actor;
 import com.sparta.sakilaweb.repositories.ActorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 
 @Controller
+@SessionAttributes("castList")
 public class SakilaController {
     @Autowired
     private ActorRepository repo;
+
+    @GetMapping("/cast/add/{id}")
+    public String addCastMember(@PathVariable int id,
+                                Model model,
+                                @ModelAttribute("castList") List<Actor> castList){
+        Actor actor = repo.findById(id).get();
+        castList.add(actor);
+//        model.addAttribute("castList", castList);
+        System.out.println(castList);
+        return "displayCastList";
+    }
+
+    @ModelAttribute("castList")
+    public List<Actor> castList(){
+        return new ArrayList<Actor>();
+    }
 
     @GetMapping("/welcome")
     public String sayHello(){

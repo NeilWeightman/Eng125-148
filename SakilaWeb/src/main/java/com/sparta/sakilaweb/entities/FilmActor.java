@@ -1,4 +1,4 @@
-package com.sparta.sakilaweb;
+package com.sparta.sakilaweb.entities;
 
 import javax.persistence.*;
 import java.time.Instant;
